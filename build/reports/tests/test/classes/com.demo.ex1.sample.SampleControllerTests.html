@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SampleControllerTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SampleControllerTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.demo.ex1.sample.html">com.demo.ex1.sample</a> &gt; SampleControllerTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.079s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testHello()</td>
+<td class="success">0.079s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>[2024-09-08 23:35:38.672]  INFO 14796 --- [    Test worker] pport.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.demo.ex1.sample.SampleControllerTests]: SampleControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-08 23:35:38.675]  INFO 14796 --- [    Test worker] ontext.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.demo.ex1.Ex1Application for test class com.demo.ex1.sample.SampleControllerTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+[2024-09-08 23:35:38.690]  INFO 14796 --- [    Test worker] om.demo.ex1.sample.SampleControllerTests : Starting SampleControllerTests using Java 17.0.12 with PID 14796 (started by junholee in /Users/junholee/Documents/study/restful/junstory)
+[2024-09-08 23:35:38.691]  INFO 14796 --- [    Test worker] om.demo.ex1.sample.SampleControllerTests : No active profile set, falling back to 1 default profile: &quot;default&quot;
+[2024-09-08 23:35:38.797]  INFO 14796 --- [    Test worker] boot.web.embedded.tomcat.TomcatWebServer : Tomcat initialized with port 0 (http)
+[2024-09-08 23:35:38.803]  INFO 14796 --- [    Test worker] g.apache.coyote.http11.Http11NioProtocol : Initializing ProtocolHandler [&quot;http-nio-auto-1&quot;]
+[2024-09-08 23:35:38.805]  INFO 14796 --- [    Test worker] org.apache.catalina.core.StandardService : Starting service [Tomcat]
+[2024-09-08 23:35:38.805]  INFO 14796 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/10.1.28]
+[2024-09-08 23:35:38.827]  INFO 14796 --- [    Test worker] e.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext
+[2024-09-08 23:35:38.828]  INFO 14796 --- [    Test worker] ntext.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+[2024-09-08 23:35:38.886]  INFO 14796 --- [    Test worker] g.apache.coyote.http11.Http11NioProtocol : Starting ProtocolHandler [&quot;http-nio-auto-1&quot;]
+[2024-09-08 23:35:38.891]  INFO 14796 --- [    Test worker] boot.web.embedded.tomcat.TomcatWebServer : Tomcat started on port 63093 (http) with context path '/'
+[2024-09-08 23:35:38.892]  INFO 14796 --- [    Test worker] om.demo.ex1.sample.SampleControllerTests : Started SampleControllerTests in 0.215 seconds (process running for 1.904)
+[2024-09-08 23:35:38.940]  INFO 14796 --- [o-auto-1-exec-1] e.ContainerBase.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-08 23:35:38.941]  INFO 14796 --- [o-auto-1-exec-1] gframework.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet'
+[2024-09-08 23:35:38.942]  INFO 14796 --- [o-auto-1-exec-1] gframework.web.servlet.DispatcherServlet : Completed initialization in 1 ms
+[2024-09-08 23:35:38.972]  INFO 14796 --- [    Test worker] om.demo.ex1.sample.SampleControllerTests : [Hello, World]
+[2024-09-08 23:35:38.972]  INFO 14796 --- [    Test worker] om.demo.ex1.sample.SampleControllerTests : 123
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2024. 9. 8. 오후 11:35:39</p>
+</div>
+</div>
+</body>
+</html>

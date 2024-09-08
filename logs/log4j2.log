@@ -1,0 +1,37 @@
+[2024-09-08 23:35:25.767]  INFO 14787 --- [  restartedMain] c.d.e.Ex1Application                     : Starting Ex1Application using Java 17.0.12 with PID 14787 (/Users/junholee/Documents/study/restful/junstory/build/classes/java/main started by junholee in /Users/junholee/Documents/study/restful/junstory)
+[2024-09-08 23:35:25.772]  INFO 14787 --- [  restartedMain] c.d.e.Ex1Application                     : No active profile set, falling back to 1 default profile: "default"
+[2024-09-08 23:35:25.785]  INFO 14787 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-08 23:35:25.785]  INFO 14787 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-08 23:35:26.122]  INFO 14787 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 8080 (http)
+[2024-09-08 23:35:26.127]  INFO 14787 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-08 23:35:26.128]  INFO 14787 --- [  restartedMain] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2024-09-08 23:35:26.128]  INFO 14787 --- [  restartedMain] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.28]
+[2024-09-08 23:35:26.143]  INFO 14787 --- [  restartedMain] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2024-09-08 23:35:26.144]  INFO 14787 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 358 ms
+[2024-09-08 23:35:26.257]  INFO 14787 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+[2024-09-08 23:35:26.263]  INFO 14787 --- [  restartedMain] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-08 23:35:26.268]  INFO 14787 --- [  restartedMain] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 8080 (http) with context path '/'
+[2024-09-08 23:35:26.272]  INFO 14787 --- [  restartedMain] c.d.e.Ex1Application                     : Started Ex1Application in 0.64 seconds (process running for 1.186)
+[2024-09-08 23:35:37.565]  INFO ${sys:PID} --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.demo.ex1.Ex1ApplicationTests]: Ex1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-08 23:35:37.605]  INFO ${sys:PID} --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.demo.ex1.Ex1Application for test class com.demo.ex1.Ex1ApplicationTests
+[2024-09-08 23:35:37.750]  INFO 14796 --- [    Test worker] c.d.e.Ex1ApplicationTests                : Starting Ex1ApplicationTests using Java 17.0.12 with PID 14796 (started by junholee in /Users/junholee/Documents/study/restful/junstory)
+[2024-09-08 23:35:37.752]  INFO 14796 --- [    Test worker] c.d.e.Ex1ApplicationTests                : No active profile set, falling back to 1 default profile: "default"
+[2024-09-08 23:35:38.276]  INFO 14796 --- [    Test worker] c.d.e.Ex1ApplicationTests                : Started Ex1ApplicationTests in 0.612 seconds (process running for 1.288)
+[2024-09-08 23:35:38.672]  INFO 14796 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.demo.ex1.sample.SampleControllerTests]: SampleControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[2024-09-08 23:35:38.675]  INFO 14796 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.demo.ex1.Ex1Application for test class com.demo.ex1.sample.SampleControllerTests
+[2024-09-08 23:35:38.690]  INFO 14796 --- [    Test worker] c.d.e.s.SampleControllerTests            : Starting SampleControllerTests using Java 17.0.12 with PID 14796 (started by junholee in /Users/junholee/Documents/study/restful/junstory)
+[2024-09-08 23:35:38.691]  INFO 14796 --- [    Test worker] c.d.e.s.SampleControllerTests            : No active profile set, falling back to 1 default profile: "default"
+[2024-09-08 23:35:38.797]  INFO 14796 --- [    Test worker] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port 0 (http)
+[2024-09-08 23:35:38.803]  INFO 14796 --- [    Test worker] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-auto-1"]
+[2024-09-08 23:35:38.805]  INFO 14796 --- [    Test worker] o.a.c.c.StandardService                  : Starting service [Tomcat]
+[2024-09-08 23:35:38.805]  INFO 14796 --- [    Test worker] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/10.1.28]
+[2024-09-08 23:35:38.827]  INFO 14796 --- [    Test worker] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+[2024-09-08 23:35:38.828]  INFO 14796 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 135 ms
+[2024-09-08 23:35:38.886]  INFO 14796 --- [    Test worker] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-auto-1"]
+[2024-09-08 23:35:38.891]  INFO 14796 --- [    Test worker] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port 63093 (http) with context path '/'
+[2024-09-08 23:35:38.892]  INFO 14796 --- [    Test worker] c.d.e.s.SampleControllerTests            : Started SampleControllerTests in 0.215 seconds (process running for 1.904)
+[2024-09-08 23:35:38.940]  INFO 14796 --- [o-auto-1-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-08 23:35:38.941]  INFO 14796 --- [o-auto-1-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+[2024-09-08 23:35:38.942]  INFO 14796 --- [o-auto-1-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+[2024-09-08 23:35:38.972]  INFO 14796 --- [    Test worker] c.d.e.s.SampleControllerTests            : [Hello, World]
+[2024-09-08 23:35:38.972]  INFO 14796 --- [    Test worker] c.d.e.s.SampleControllerTests            : 123
