@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TodoServiceTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TodoServiceTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.ex3.service.html">com.example.ex3.service</a> &gt; TodoServiceTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.522s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testList()</td>
+<td class="success">0.522s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>17:42:07.510 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.ex3.service.TodoServiceTests]: TodoServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:42:07.554 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.ex3.Ex3Application for test class com.example.ex3.service.TodoServiceTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.3)
+
+2024-09-18T17:42:07.702+09:00  INFO 85314 --- [ex3] [    Test worker] c.example.ex3.service.TodoServiceTests   : Starting TodoServiceTests using Java 21.0.4 with PID 85314 (started by junholee in /Users/junholee/Documents/study/restful/ex3)
+2024-09-18T17:42:07.703+09:00  INFO 85314 --- [ex3] [    Test worker] c.example.ex3.service.TodoServiceTests   : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-09-18T17:42:07.978+09:00  INFO 85314 --- [ex3] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-18T17:42:08.000+09:00  INFO 85314 --- [ex3] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 1 JPA repository interface.
+2024-09-18T17:42:08.172+09:00  INFO 85314 --- [ex3] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-18T17:42:08.195+09:00  INFO 85314 --- [ex3] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-18T17:42:08.207+09:00  INFO 85314 --- [ex3] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-18T17:42:08.328+09:00  INFO 85314 --- [ex3] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-18T17:42:08.339+09:00  INFO 85314 --- [ex3] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-18T17:42:08.376+09:00  INFO 85314 --- [ex3] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@15f2a43f
+2024-09-18T17:42:08.377+09:00  INFO 85314 --- [ex3] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-18T17:42:08.390+09:00  WARN 85314 --- [ex3] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-09-18T17:42:08.701+09:00  INFO 85314 --- [ex3] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-18T17:42:08.720+09:00  INFO 85314 --- [ex3] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-18T17:42:08.866+09:00  INFO 85314 --- [ex3] [    Test worker] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-18T17:42:09.156+09:00  WARN 85314 --- [ex3] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-18T17:42:09.311+09:00  INFO 85314 --- [ex3] [    Test worker] c.example.ex3.service.TodoServiceTests   : Started TodoServiceTests in 1.699 seconds (process running for 2.176)
+Hibernate: 
+    select
+        te1_0.mno,
+        te1_0.due_date,
+        te1_0.title,
+        te1_0.writer 
+    from
+        tbl_todos te1_0 
+    where
+        te1_0.mno&gt;? 
+    order by
+        te1_0.mno desc 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        count(te1_0.mno) 
+    from
+        tbl_todos te1_0 
+    where
+        te1_0.mno&gt;?
+PREV: Page request [number: 1, size 20, sort: mno: DESC]
+NEXT: Page request [number: 3, size 20, sort: mno: DESC]
+TOTAL: 211
+TodoDTO(mno=173, title=Test Todo...61, writer=tester61, dueDate=2025-12-23)
+TodoDTO(mno=172, title=Test Todo...60, writer=tester60, dueDate=2025-12-23)
+TodoDTO(mno=171, title=Test Todo...59, writer=tester59, dueDate=2025-12-23)
+TodoDTO(mno=170, title=Test Todo...58, writer=tester58, dueDate=2025-12-23)
+TodoDTO(mno=169, title=Test Todo...57, writer=tester57, dueDate=2025-12-23)
+TodoDTO(mno=168, title=Test Todo...56, writer=tester56, dueDate=2025-12-23)
+TodoDTO(mno=167, title=Test Todo...55, writer=tester55, dueDate=2025-12-23)
+TodoDTO(mno=166, title=Test Todo...54, writer=tester54, dueDate=2025-12-23)
+TodoDTO(mno=165, title=Test Todo...53, writer=tester53, dueDate=2025-12-23)
+TodoDTO(mno=164, title=Test Todo...52, writer=tester52, dueDate=2025-12-23)
+TodoDTO(mno=163, title=Test Todo...51, writer=tester51, dueDate=2025-12-23)
+TodoDTO(mno=162, title=Test Todo...50, writer=tester50, dueDate=2025-12-23)
+TodoDTO(mno=161, title=Test Todo...49, writer=tester49, dueDate=2025-12-23)
+TodoDTO(mno=160, title=Test Todo...48, writer=tester48, dueDate=2025-12-23)
+TodoDTO(mno=159, title=Test Todo...47, writer=tester47, dueDate=2025-12-23)
+TodoDTO(mno=158, title=Test Todo...46, writer=tester46, dueDate=2025-12-23)
+TodoDTO(mno=157, title=Test Todo...45, writer=tester45, dueDate=2025-12-23)
+TodoDTO(mno=156, title=Test Todo...44, writer=tester44, dueDate=2025-12-23)
+TodoDTO(mno=155, title=Test Todo...43, writer=tester43, dueDate=2025-12-23)
+TodoDTO(mno=154, title=Test Todo...42, writer=tester42, dueDate=2025-12-23)
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/junholee/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.19/154da3a65b4f4a909d3e5bdec55d1b2b4cbb6ce1/byte-buddy-agent-1.14.19.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.10.1</a> at 2024. 9. 18. 오후 5:42:09</p>
+</div>
+</div>
+</body>
+</html>
