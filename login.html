@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Login</h1>
+        <div>
+            <input type="text" placeholder="Username" name="mid">
+            <input type="password" placeholder="Password" name="mpw">
+            <button class="loginBtn">Login</button>
+        </div>
+    </div>
+    <script type="module" src="./js/api.js"></script>
+
+    <script type="module">
+            import {testApi, makeToken, saveToken} from './js/api.js'
+            testApi();
+            document.querySelector(".loginBtn").addEventListener("click", ()=>{
+                const mid = document.querySelector("input[name='mid']").value
+                const mpw = document.querySelector("input[name='mpw']").value
+                makeToken(mid,mpw).then(data =>{
+                    //console.log(data);
+                    const accessToken = data.accessToken;
+                    const refreshToken = data.refreshToken;
+                    
+                    console.log("AccessToken: ", accessToken);
+                    console.log("RefreshToken: ", refreshToken);
+
+                    saveToken("accessToken", accessToken);
+                    saveToken("refreshToken", refreshToken);
+                    saveToken("mid", mid);
+
+                    window.location.href = "/list.html";
+                }).catch(err =>{
+                    console.log(err);
+                    const errorMsg = err.response.data.error;
+                    alert(errorMsg);
+                })
+                
+
+            }, false);
+
+    </script>
+</body>
+</html>
