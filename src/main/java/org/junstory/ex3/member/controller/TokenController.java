@@ -1,5 +1,6 @@
 package org.junstory.ex3.member.controller;
 
+import io.jsonwebtoken.ExpiredJwtException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.junstory.ex3.member.dto.MemberDTO;
@@ -42,7 +43,7 @@ public class TokenController {
         log.info("refreshToken " + refreshToken);
 
         //return null;
-        return ResponseEntity.ok(Map.of("access_token",accessToken, "refresh_token",refreshToken));
+        return ResponseEntity.ok(Map.of("accessToken",accessToken, "refreshToken",refreshToken));
 
     }
 
@@ -74,19 +75,23 @@ public class TokenController {
             jwtUtil.validateToken(accessToekn);
             Map<String ,String> data = makeData(mid, accessToekn, refreshToken);
             return ResponseEntity.ok(data);
-        }catch (io.jsonwebtoken.ExpiredJwtException expiredJwtException){
-            //refresh 필요
-            makeNewToken(mid, refreshToken);
+        }catch (ExpiredJwtException expiredJwtException){
+            try{//refresh 필요
+                Map<String, String> newTokenMap = makeNewToken(mid, refreshToken);
+                return ResponseEntity.ok(newTokenMap);
+            }catch (Exception e){
+                return handleException("REFRESH "+ e.getMessage(), 400);
+            }
         } catch (Exception e){
             return handleException(e.getMessage(), 400);
         }
 
-        return null;
+
     }
     private Map<String, String> makeNewToken(String mid, String refreshToken){
 
         Map<String, Object> claims = jwtUtil.validateToken(refreshToken);
-        log.info("refresh token: " + refreshToken);
+        log.info("refresh token claims: " + refreshToken);
         if(!mid.equals(claims.get("mid").toString())){
             throw new RuntimeException("Invalid Refresh Token Host");
         }

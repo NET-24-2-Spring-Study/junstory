@@ -20,7 +20,7 @@ public class TokenControllerAdvice {
 
         log.error(ex.getMessage());
 
-        String msg = ex.getMessage();
+        String msg = ex.getMsg();
         int status = ex.getCode();
 
         Map<String, String> map = Map.of("error",msg);

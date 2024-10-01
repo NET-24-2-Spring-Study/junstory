@@ -4,12 +4,16 @@ import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.junstory.ex3.member.security.auth.CustomUserPrincipal;
+
 import org.junstory.ex3.member.security.util.JWTUtil;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
@@ -18,6 +22,9 @@ import java.util.stream.Collectors;
 
 import static org.springframework.security.config.Elements.JWT;
 
+@Component
+@RequiredArgsConstructor
+@Log4j2
 public class JWTCheckFilter extends OncePerRequestFilter {
 
     private final JWTUtil jwtUtil;
@@ -26,9 +33,14 @@ public class JWTCheckFilter extends OncePerRequestFilter {
     protected boolean shouldNotFilter(HttpServletRequest request) throws ServletException {
         //return super.shouldNotFilter(request);
 
-        if (request.getServletPath().startsWith("/api/v1/token")){
+        if (request.getServletPath().startsWith("/api/v1/token/")){
             return true;
         }
+        String path = request.getRequestURI();
+        if(!path.startsWith("/api/")){
+            return true;
+        }
+
         //경로지정 필요
         return false;
     }
